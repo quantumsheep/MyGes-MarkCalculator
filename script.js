@@ -11,7 +11,7 @@
             if (elem.childNodes[i].innerHTML) {
                 if (avg == -1) avg = 0;
 
-                avg += parseFloat(elem.childNodes[i].innerHTML, 10);
+                avg += parseFloat(elem.childNodes[i].innerHTML);
                 markcount++;
             }
         }
