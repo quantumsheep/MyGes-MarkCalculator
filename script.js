@@ -31,6 +31,6 @@
         }
     });
 
-    console.log(`Moyenne totale: ${totalavg/count}`);
+    console.log(`Moyenne totale: ${(totalavg/count).toFixed(2)}`);
     console.log(`ECTS gagnés: ${ects}`);    
 })();
