@@ -1,12 +1,30 @@
 # Calculateur de moyenne MyGES
 Calculateur de moyenne et de gains d'ECTS pour MyGES (Intranet du groupe GES)
 
-## Comment l'utiliser?
-Allez sur la page https://www.myges.fr/student/marks.
+---
 
+## Comment utiliser le script ?
+### Extension chrome
+Vous pouvez utiliser ce script depuis une extension chrome qui se chargera de lancer automatiquement le code lors de la visualisation des notes sur la page https://www.myges.fr/student/marks.
+
+Pour installer l'extension sur chrome il faut :  
+  - Cloner ce dépôt n'importe où sur votre ordinateur
+  - Aller dans le menu de chrome (les 3 petits points à droite)
+  - Aller dans l'onglet "Plus d'outils" puis dans "Extensions"
+  - Dans l'onglet Extensions :
+    - Activer le mode développeur
+    - Cliquer sur "Chargez l'extension non empaquetée"
+    - Sélectionner le dossier "Chrome Extension" contenu dans le projet précédemment cloné
+
+Et voilà! L'extension vous permet, en plus de calculer votre moyenne automatiquement, d'accéder à la page des notes en cliquant sur l'icône de l'extension.
+
+### Depuis la console javascript
+Allez sur la page https://www.myges.fr/student/marks.  
 Copiez-collez le code du fichier "script.js" dans la console javascript de votre navigateur puis lancez le.
 
-## Comment ouvrir la console javascript?
+---
+
+## Comment ouvrir la console javascript ?
 ### Chrome
 Ouvrir le panneau "Console" des DevTools de Chrome :
 
