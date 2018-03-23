@@ -20,6 +20,27 @@ Pour installer l'extension sur chrome il faut :
 
 Et voilà! L'extension vous permet, en plus de calculer votre moyenne automatiquement, d'accéder à la page des notes en cliquant sur l'icône de l'extension.
 
+### Tampermonkey
+
+#### Automatique
+
+Tampermonkey est nativement prévu pour réagir aux fichiers se terminants par ".user.js", le lien ci-dessous devrait vous emmener sur la page d'installation du script sur Tampermonkey :  
+https://github.com/QuantumSheep/MyGes-MarkCalculator/raw/master/tampermonkey_mgmc.user.js
+
+Si cette méthode ne fonctionne pas, je vous invite à utiliser la méthode manuelle
+
+#### Manuelle
+
+Bien évidemment, il est possible d'utiliser Tampermonkey pour charger ce script automatiquement, pour cela vous avez besoin de [TamperMonker](https://tampermonkey.net/) (On aurait pu s'en douter).
+
+Ensuite il vous suffit de cliquer sur l'icone de Tampermonkey puis de cliquer sur "Dashboard". Une fois dans le panneau d'administration de vos scripts, vous devez aller dans l'onglet "Utilities" et dans la partie "URL", entrez le lien suivant:
+
+```
+https://github.com/QuantumSheep/MyGes-MarkCalculator/raw/master/tampermonkey_mgmc.user.js
+```
+
+Et voilà, un script tout prêt pour votre prochaine expédition dans vos notes MyGes !
+
 ### Depuis la console javascript
 Allez sur la page https://www.myges.fr/student/marks.  
 Copiez-collez le code du fichier "script.js" dans la console javascript de votre navigateur puis lancez le.
