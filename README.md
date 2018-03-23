@@ -1,6 +1,8 @@
 # Calculateur de moyenne MyGES
 Calculateur de moyenne et de gains d'ECTS pour MyGES (Intranet du groupe GES)
 
+![Exemple de moyenne sur MyGES](https://i.imgur.com/WuHIwUZ.png)
+
 ---
 
 ## Comment utiliser le script ?
