@@ -36,7 +36,6 @@ Ouvrir le panneau "Console" des F12 Developer Tools d'Internet Explorer :
 
 
 ### Safari
-Opening the “Console” panel in Safari’s Web Inspector:
 Ouvrir le panneau "Console" dans l'Inspecteur Web de Safari :
 
     Cmd + Opt + I
@@ -48,7 +47,7 @@ Si le menu Développement n’apparaît pas dans la barre des menus, choisissez 
 
 ### Opera
 
-    Windows and Linux: Ctrl + Shift + I
+    Windows et Linux: Ctrl + Shift + I
     Mac : Cmd + Opt + I
 
 [Documentation](http://www.opera.com/dragonfly/documentation/)
