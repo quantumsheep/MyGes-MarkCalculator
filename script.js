@@ -7,9 +7,9 @@
         let avg = -1;
         let markcount = 0;
 
-        for (let i = 4; i <= 7; i++) {
+        for (let i = 4; i < elem.childNodes.length; i++) {
             if (elem.childNodes[i].innerHTML) {
-                if (avg == -1) avg = 0;
+                if (avg === -1) avg = 0;
 
                 avg += parseFloat(elem.childNodes[i].innerHTML);
                 markcount++;
