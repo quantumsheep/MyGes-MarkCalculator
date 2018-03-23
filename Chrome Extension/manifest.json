@@ -1,0 +1,32 @@
+{
+    "name": "MyGes-MarkCalculator-Chrome",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Auto MyGes mark calculator",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.myges.fr/student/marks/*"
+            ],
+            "js": [
+                "main.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "activeTab"
+    ]
+}
