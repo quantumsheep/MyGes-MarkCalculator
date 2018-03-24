@@ -27,7 +27,7 @@ Et voilà! L'extension vous permet, en plus de calculer votre moyenne automatiqu
 Tampermonkey est nativement prévu pour réagir aux fichiers se terminants par ".user.js", le lien ci-dessous devrait vous emmener sur la page d'installation du script sur Tampermonkey :  
 https://github.com/QuantumSheep/MyGes-MarkCalculator/raw/master/tampermonkey_mgmc.user.js
 
-Si cette méthode ne fonctionne pas, je vous invite à utiliser la méthode manuelle
+Si cette méthode ne fonctionne pas, je vous invite à utiliser la méthode manuelle.
 
 #### Manuelle
 
