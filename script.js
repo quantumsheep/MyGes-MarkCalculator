@@ -23,7 +23,7 @@
 
             rowcount++;
 
-            for (let i = 4; i < elem.childNodes.length; i++) {
+            for (let i = 4; i < elem.childNodes.length - 1; i++) {
                 if (elem.childNodes[i].innerHTML) {
                     avg += parseFloat(elem.childNodes[i].innerHTML.replace(',', '.'));
                     markcount++;
@@ -40,9 +40,15 @@
                     coefIsNaN = true;
                 }
 
-                avg = (avg * coef) / (coef * markcount);
-                totalavg += avg;
-                avgcount++;
+                const exam = parseFloat(elem.childNodes[elem.childNodes.length - 1].innerHTML.replace(',', '.'));
+                avg = (avg / markcount);
+
+                if(exam) {
+                    avg = (avg + exam) / 2;
+                }
+
+                totalavg += avg * coef;
+                avgcount += coef;
 
                 let thisects = 0;
 
