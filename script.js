@@ -21,18 +21,31 @@
             }
         }
 
+        let coefIsNaN = false;
+
         if (markcount > 0) {
-            const coef = parseFloat(elem.childNodes[2].innerHTML);
+            let coef = parseFloat(elem.childNodes[2].innerHTML);
+
+            if(isNaN(coef)) {
+                coef = 1;
+                coefIsNaN = true;
+            }
 
             avg = (avg * coef) / (coef * markcount);
             totalavg += avg;
             avgcount++;
 
+            let thisects = 0;
+
             if (avg >= 10) {
-                ects += parseFloat(elem.childNodes[3].innerHTML);
+                thisects = parseFloat(elem.childNodes[3].innerHTML);
+
+                if(!isNaN(thisects)) {
+                    ects += thisects;
+                }
             }
 
-            console.log(`Moyenne pour ${elem.childNodes[0].firstChild.innerHTML} : ${avg} (coef ${elem.childNodes[2].innerHTML}) ${avg >= 10 ? `(+${elem.childNodes[2].innerHTML} ECTS)` : ''}`);
+            console.log(`Moyenne pour ${elem.childNodes[0].firstChild.innerHTML} : ${avg} (coef ${coefIsNaN ? 'inconnu (remplacé par 1)' : parseInt(elem.childNodes[3].innerHTML)}) ${thisects > 0 ? `(+${thisects} ECTS)` : ''}`);
         }
     });
 
