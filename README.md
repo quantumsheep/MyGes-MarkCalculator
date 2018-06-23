@@ -39,7 +39,7 @@ Ensuite il vous suffit de cliquer sur l'icone de Tampermonkey puis de cliquer su
 https://github.com/QuantumSheep/MyGes-MarkCalculator/raw/master/tampermonkey_mgmc.user.js
 ```
 
-Puis cliquez sur "Install".
+Puis cliquez sur "Install" puis "Import".
 
 Et voilà, un script tout prêt pour votre prochaine expédition dans vos notes MyGes !
 
