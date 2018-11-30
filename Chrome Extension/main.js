@@ -63,10 +63,12 @@
 
                 let thisects = 0;
 
-                thisects = parseFloat(elem.childNodes[3].innerHTML);
+                if (avg >= 10) {
+                    thisects = parseFloat(elem.childNodes[3].innerHTML);
 
-                if (!isNaN(thisects)) {
-                    ects += thisects;
+                    if (!isNaN(thisects)) {
+                        ects += thisects;
+                    }
                 }
 
                 console.log(`Moyenne pour ${elem.childNodes[0].firstChild.innerHTML} : ${avg} (coef ${coefIsNaN ? 'inconnu (remplacé par 1)' : parseInt(elem.childNodes[3].innerHTML)}) ${thisects > 0 ? `(+${thisects} ECTS)` : ''}`);
