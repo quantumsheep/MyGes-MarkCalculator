@@ -32,32 +32,41 @@
 
             let coefIsNaN = false;
 
-            if (markcount > 0) {
-                let coef = parseFloat(elem.childNodes[2].innerHTML);
+            const noCC = markcount === 0;
 
-                if (isNaN(coef)) {
-                    coef = 1;
-                    coefIsNaN = true;
-                }
+            if (noCC) {
+                avg = 0;
+            }
 
-                const exam = parseFloat(elem.childNodes[elem.childNodes.length - 1].innerHTML.replace(',', '.'));
+            let coef = parseFloat(elem.childNodes[2].innerHTML);
+
+            if (isNaN(coef)) {
+                coef = parseFloat(elem.childNodes[3].innerHTML);
+                coefIsNaN = true;
+            }
+
+            const exam = parseFloat(elem.childNodes[elem.childNodes.length - 1].innerHTML.replace(',', '.'));
+
+            if (!noCC) {
                 avg = (avg / markcount);
 
-                if(exam) {
+                if (exam) {
                     avg = (avg + exam) / 2;
                 }
+            } else {
+                avg = exam;
+            }
 
+            if (!isNaN(avg)) {
                 totalavg += avg * coef;
                 avgcount += coef;
 
                 let thisects = 0;
 
-                if (avg >= 10) {
-                    thisects = parseFloat(elem.childNodes[3].innerHTML);
+                thisects = parseFloat(elem.childNodes[3].innerHTML);
 
-                    if (!isNaN(thisects)) {
-                        ects += thisects;
-                    }
+                if (!isNaN(thisects)) {
+                    ects += thisects;
                 }
 
                 console.log(`Moyenne pour ${elem.childNodes[0].firstChild.innerHTML} : ${avg} (coef ${coefIsNaN ? 'inconnu (remplacé par 1)' : parseInt(elem.childNodes[3].innerHTML)}) ${thisects > 0 ? `(+${thisects} ECTS)` : ''}`);
