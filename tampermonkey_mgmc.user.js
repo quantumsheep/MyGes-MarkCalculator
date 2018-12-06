@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         MyGes-MarkCalculator
 // @namespace    https://github.com/QuantumSheep/MyGes-MarkCalculator
-// @version      1.2
+// @version      1.3
 // @description  Calculateur de moyenne et de gains d'ECTS pour MyGES (Intranet du groupe GES)
 // @author       QuantumSheep
 // @require      https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.2/babel.js
@@ -17,7 +17,7 @@ var inline_src = (<><![CDATA[
 
     (() => {
         if (document.getElementById("myges-markcalculator") != null) return;
-        
+
         const calculate = () => {
             document.querySelector('#marksForm\\:marksWidget\\:coursesTable_head tr').innerHTML += `<th id="marksForm:marksWidget:coursesTable:j_idt183" class="ui-state-default" role="columnheader" style="width:55px;text-align: center"><span class="ui-column-title">Moyenne</span></th>`
 
