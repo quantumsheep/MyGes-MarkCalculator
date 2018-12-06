@@ -17,7 +17,7 @@ var inline_src = (<><![CDATA[
 
     (() => {
         if (document.getElementById("myges-markcalculator") != null) return;
-
+        
         const calculate = () => {
             document.querySelector('#marksForm\\:marksWidget\\:coursesTable_head tr').innerHTML += `<th id="marksForm:marksWidget:coursesTable:j_idt183" class="ui-state-default" role="columnheader" style="width:55px;text-align: center"><span class="ui-column-title">Moyenne</span></th>`
 
@@ -110,9 +110,9 @@ var inline_src = (<><![CDATA[
                 </tr>`;
         }
 
-        let actual = document.querySelector('#marksForm\\:j_idt164\\:periodSelect_panel div ul li.ui-state-highlight').innerText;
+        let actual = document.querySelector('#marksForm\\:j_idt168\\:periodSelect_panel div ul li.ui-state-highlight').innerText;
 
-        document.querySelectorAll('#marksForm\\:j_idt164\\:periodSelect_panel div ul li').forEach(elem => elem.addEventListener('click', function (e) {
+        document.querySelectorAll('#marksForm\\:j_idt168\\:periodSelect_panel div ul li').forEach(elem => elem.addEventListener('click', function (e) {
             if (this.innerText !== actual) {
                 actual = this.innerText;
 
