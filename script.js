@@ -93,9 +93,9 @@
             </tr>`;
     }
 
-    let actual = document.querySelector('#marksForm\\:j_idt168\\:periodSelect_panel div ul li.ui-state-highlight').innerText;
+    let actual = document.querySelector('[id^="marksForm:"][id$=":periodSelect_panel"] div ul li.ui-state-highlight').innerText;
 
-    document.querySelectorAll('#marksForm\\:j_idt168\\:periodSelect_panel div ul li').forEach(elem => elem.addEventListener('click', function (e) {
+    document.querySelectorAll('[id^="marksForm:"][id$=":periodSelect_panel"] div ul li').forEach(elem => elem.addEventListener('click', function (e) {
         if (this.innerText !== actual) {
             actual = this.innerText;
 
