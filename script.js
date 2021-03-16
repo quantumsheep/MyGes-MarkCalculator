@@ -72,7 +72,7 @@
         }
 
         console.log(`Moyenne pour ${elem.childNodes[0].firstChild.innerHTML} : ${avg} (coef ${coefIsNaN ? `inconnu (remplacé par ${coef})` : parseInt(elem.childNodes[3].innerHTML)}) ${thisects > 0 ? `(+${thisects} ECTS)` : ''}`);
-        td.innerText = avg;
+        td.innerText = (((avg % 1) === 0) ? avg : avg.toFixed(2));
       }
 
       elem.appendChild(td);
